@@ -23,18 +23,91 @@ Todos los capítulos deben comenzar con un breve párrafo introductorio que indi
 %----------------------------------------------------------------------------------------
 \section{Estado del arte}
 
-Revisión de tecnologías actuales para redes de sensores en invernaderos (cableadas e inalámbricas), comparando alternativas como Zigbee, LoRa, Wi-Fi y Bluetooth Mesh, con sus ventajas y limitaciones.
+En el ámbito de la agricultura de precisión y, en particular, en los sistemas de monitoreo y control de invernaderos, las \textbf{redes de sensores} cumplen un papel central para la adquisición de datos ambientales y el accionamiento de dispositivos de control. Tradicionalmente, estos sistemas han utilizado \textbf{soluciones cableadas}, que si bien ofrecen estabilidad y baja latencia, presentan limitaciones importantes en términos de flexibilidad, costos de instalación y escalabilidad. Estas restricciones han impulsado el desarrollo y adopción de \textbf{tecnologías inalámbricas} que permiten implementar redes más dinámicas, modulares y fáciles de expandir.
 
+En la Tabla \ref{tab:comparacion_tecnologias} se presenta una comparación de las principales alternativas utilizadas en la actualidad para redes de sensores: Wi-Fi, Zigbee, LoRa y Bluetooth Mesh.  
 
+\begin{table}[h]
+\centering
+\caption{Comparación de tecnologías de comunicación para redes de sensores en invernaderos}
+\label{tab:comparacion_tecnologias}
+\begin{tabular}{l l l l l}
+\toprule
+\textbf{Característica} & \textbf{Wi-Fi} & \textbf{Zigbee} & \textbf{LoRa} & \textbf{Bluetooth Mesh} \\
+\midrule
+\textbf{Alcance típico}
+ & 30 -- 50 m & 10 -- 100 m & Hasta 10 km & 10 -- 30 m \\
+ & en interiores & por nodo &  & por nodo \\
+\textbf{Consumo energético} & Alto & Bajo & Muy bajo & Bajo \\
+\textbf{Ancho de banda} 
+& Alto & Bajo & Muy bajo & Medio-bajo \\
+& (Mbps) & (kbps) & (bps--kbps) & (kbps) \\
 
+\textbf{Topología} 
+& Estrella & Estrella & Estrella & Malla  \\
+& Punto a punto & Malla & (gateway) & descentralizada \\
+
+\textbf{Escalabilidad} 
+& Limitada & Alta & Muy alta & Alta \\
+\textbf{Latencia} & Baja & Baja & Alta & Baja \\
+
+\bottomrule
+\hline
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Wi-Fi:} Tecnología ampliamente disponible, con buen ancho de banda y facilidad de integración a redes existentes. Ofrece altas velocidades de transmisión (Mbps) pero su alcance es limitado en entornos con obstaculos y presenta un consumo energético elevado, lo que dificulta su uso en sistemas con muchos sensores distribuidos y alimentados por baterías. 
+    
+    \item \textbf{Zigbee:} Estándar basado en IEEE 802.15.4, diseñado para aplicaciones de baja potencia y con soporte nativo para topologías de red en malla. Su ventaja principal es la eficiencia energética y la capacidad de conectar decenas o cientos de nodos. No obstante, su ancho de banda reducido (250 kbps) y la necesidad de un coordinador central limitan la velocidad de transmisión y pueden introducir cuellos de botella en aplicaciones con transmisión intensiva de datos.
+   
+    \item \textbf{LoRa:} Orientado a comunicaciones de largo alcance y bajo consumo, es ideal para aplicaciones agrícolas en exteriores. Permite conexiones a varios kilómetros (hasta 10 km en entornos abiertos), pero a costa de un ancho de banda muy limitado (0.3–50 kbps) y una alta latencia, lo que lo hace menos adecuado para aplicaciones que requieren interacción en tiempo real.   
+   
+    \item \textbf{Bluetooth Mesh:} Extiende las capacidades de Bluetooth Low Energy (BLE) mediante la creación de \textbf{redes en malla descentralizadas}, donde cada nodo puede retransmitir mensajes y ampliar el alcance total del sistema. Su bajo consumo energético, la interoperabilidad con dispositivos existentes y la capacidad de formar redes escalables (cientos de nodos) lo convierten en una solución especialmente atractiva para entornos cerrados como invernaderos. Entre sus limitaciones se encuentra el alcance reducido por nodo en comparación con otras tecnologías, lo que exige un despliegue cuidadoso para garantizar la cobertura completa.    
+\end{itemize}
+
+En síntesis, cada tecnología ofrece ventajas y limitaciones que determinan su aplicabilidad en función del entorno y los requisitos del sistema. Mientras que LoRa resulta más adecuado para grandes extensiones agrícolas, Zigbee y Bluetooth Mesh se consideran las tecnologías más apropiadas para invernaderos, destacando esta última por su \textbf{flexibilidad, escalabilidad y compatibilidad con el ecosistema IoT actual}.
 %----------------------------------------------------------------------------------------
 
 \section{Motivación}
 
-Explicación del problema (limitaciones del sistema cableado de Wentux Tecnoagro), la necesidad de escalabilidad y flexibilidad, y la relevancia de implementar una solución embebida basada en IoT.
+Los sistemas de monitoreo y control de invernaderos desarrollados por la empresa Wentux Tecnoagro utilizan actualmente un esquema de conexión \textbf{cableada} entre sensores, actuadores y un nodo central. Si bien esta solución garantiza estabilidad y confiabilidad en la transmisión de datos, presenta limitaciones significativas en cuanto a \textit{escalabilidad, flexibilidad y facilidad de instalación}. El nodo central admite solo un número reducido de sensores y actuadores, lo que restringe la expansión del sistema y obliga a realizar instalaciones complejas y costosas a medida que se requiere cubrir mayores áreas de cultivo.
+
+Estas limitaciones dificultan la competitividad de la empresa en un mercado donde la \textbf{agricultura de precisión} demanda soluciones cada vez más flexibles, modulares y adaptables a diferentes escenarios productivos. En este contexto, surge la necesidad de implementar una alternativa basada en tecnologías inalámbricas que permita superar los obstáculos del esquema cableado.
+
+La propuesta de este trabajo se centra en el diseño y la implementación de un sistema \textbf{Bluetooth Mesh}, una solución que aporta escalabilidad al posibilitar la incorporación de nuevos nodos sin necesidad de cableado adicional, y flexibilidad al adaptarse a diferentes configuraciones de red dentro del invernadero. Asimismo, la integración de esta tecnología en un \textbf{entorno embebido IoT} resulta especialmente relevante, ya que aprovecha las capacidades de procesamiento distribuido y comunicación colaborativa entre dispositivos, alineándose con las tendencias actuales en automatización agrícola.
+
+En síntesis, la motivación principal de este proyecto radica en ofrecer a Wentux Tecnoagro una solución que no solo resuelva las limitaciones de sus sistemas actuales, sino que también aporte \textbf{valor agregado} mediante una plataforma tecnológica moderna, escalable y orientada a la innovación en el sector agroindustrial.
 
 %----------------------------------------------------------------------------------------
 
 \section{Alcance y objetivos}
 
 Definición de lo que cubre el trabajo y lo que queda fuera del alcance. Objetivo general y objetivos específicos.
+
+\subsection*{Alcance}
+El presente trabajo tiene como alcance el \textbf{diseño e implementación de un sistema de comunicación inalámbrica basado en Bluetooth Mesh} para la gestión de sensores en invernaderos de Wentux Tecnoagro. El proyecto comprende:
+
+\begin{itemize}
+    \item El desarrollo de una red Mesh funcional en entorno de laboratorio, compuesta por un nodo central y nodos sensores/actuadores simulados.
+    \item La implementación de un servidor web embebido que permite la visualización y gestión de la red en tiempo real a través de una conexión local.
+    \item La elaboración de la documentación técnica que facilite la futura integración del sistema en dispositivos comerciales de la empresa.
+\end{itemize}
+
+Quedan fuera del alcance de este trabajo:
+\begin{itemize}
+    \item La integración definitiva del sistema en dispositivos de producción comercial.
+    \item La validación del sistema en invernaderos reales a gran escala.
+    \item El desarrollo de funcionalidades avanzadas de seguridad y conexión con servicios en la nube.
+\end{itemize}
+
+\subsection*{Objetivo general}
+Diseñar e implementar un sistema de comunicación basado en \textbf{Bluetooth Mesh} para la gestión de sensores en invernaderos, que proporcione escalabilidad, flexibilidad y facilidad de integración en las soluciones de Wentux Tecnoagro.
+
+\subsection*{Objetivos específicos}
+\begin{itemize}
+    \item Desarrollar la arquitectura de hardware, firmware e interfaz de usuario para un sistema de comunicación en malla.
+    \item Implementar un prototipo funcional con nodos sensores/actuadores simulados y un nodo central con servidor web embebido.
+    \item Validar el sistema en condiciones de laboratorio mediante pruebas unitarias y funcionales.
+    \item Documentar el proceso de diseño, implementación y pruebas, generando material de apoyo para su futura integración en entornos reales.
+\end{itemize}

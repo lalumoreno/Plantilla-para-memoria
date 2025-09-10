@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.5)  9 SEP 2025 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.5)  9 SEP 2025 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,8 +781,25 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen187
 \ESO@tempdimb=\dimen188
 )
-Package hyperref Info: Option `unicode' set `true' on input line 39.
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count439
+\float@exts=\toks26
+\float@box=\box68
+\@float@everytoks=\toks27
+\@floatcapt=\box69
+)
+Package scrhack Info: loading float hack on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2021/11/13 v3.35 KOMA-Script scrhack part (hacking package floa
+t)
+Package scrhack Info: redefining \newfloat on input line 163.
+Package scrhack Info: redefining \listof on input line 163.
+Package scrhack Info: undefining \float@addtolists on input line 163.
+)
+Package hyperref Info: Option `unicode' set `true' on input line 41.
+Package hyperref Info: Option `colorlinks' set `true' on input line 41.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
@@ -799,26 +816,26 @@ LaTeX Info: Redefining \% on input line 30.
 (./Chapters/Chapter5.aux))
 \openout1 = `memorianueva.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-spanish.trsl
@@ -826,44 +843,37 @@ File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 61.
+or `spanish'. on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count439
+\scratchcounter=\count440
 \scratchdimen=\dimen189
-\scratchbox=\box68
-\nofMPsegments=\count440
-\nofMParguments=\count441
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count442
+\scratchbox=\box70
+\nofMPsegments=\count441
+\nofMParguments=\count442
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count443
 \MPscratchDim=\dimen190
-\MPnumerator=\count443
-\makeMPintoPDFobject=\count444
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count445
-Package scrhack Info: undefining \float@addtolists on input line 61.
+\c@lstlisting=\count446
+Package scrhack Info: undefining \float@addtolists on input line 63.
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
 
@@ -882,9 +892,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'memorianueva.bbl' not found.
 
 No file memorianueva.bbl.
-Package biblatex Info: Reference section=0 on input line 61.
-Package biblatex Info: Reference segment=0 on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
+Package biblatex Info: Reference section=0 on input line 63.
+Package biblatex Info: Reference segment=0 on input line 63.
+Package hyperref Info: Link coloring ON on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -894,47 +904,47 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count446
+\c@section@level=\count447
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (./memorianueva.out) (./memorianueva.out)
 \@outlinefile=\write4
 \openout4 = `memorianueva.out'.
 
-LaTeX Info: Redefining \sptext on input line 61.
-LaTeX Info: Redefining \lsc on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \dotlessi on input line 61.
-Package scrbase Info: activating spanish \lstlistingname on input line 61.
-LaTeX Info: Redefining \sptext on input line 61.
-LaTeX Info: Redefining \lsc on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \dotlessi on input line 61.
-Package scrbase Info: activating spanish \acknowledgementname on input line 61.
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \lsc on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+LaTeX Info: Redefining \dotlessi on input line 63.
+Package scrbase Info: activating spanish \lstlistingname on input line 63.
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \lsc on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+LaTeX Info: Redefining \dotlessi on input line 63.
+Package scrbase Info: activating spanish \acknowledgementname on input line 63.
 
-LaTeX Info: Redefining \sptext on input line 61.
-LaTeX Info: Redefining \lsc on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \dotlessi on input line 61.
-Package scrbase Info: activating spanish \authorshipname on input line 61.
-LaTeX Info: Redefining \sptext on input line 61.
-LaTeX Info: Redefining \lsc on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \dotlessi on input line 61.
-Package scrbase Info: activating spanish \abbrevname on input line 61.
-LaTeX Info: Redefining \sptext on input line 61.
-LaTeX Info: Redefining \lsc on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \dotlessi on input line 61.
-Package scrbase Info: activating spanish \byname on input line 61.
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \lsc on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+LaTeX Info: Redefining \dotlessi on input line 63.
+Package scrbase Info: activating spanish \authorshipname on input line 63.
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \lsc on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+LaTeX Info: Redefining \dotlessi on input line 63.
+Package scrbase Info: activating spanish \abbrevname on input line 63.
+LaTeX Info: Redefining \sptext on input line 63.
+LaTeX Info: Redefining \lsc on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+LaTeX Info: Redefining \dotlessi on input line 63.
+Package scrbase Info: activating spanish \byname on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -972,7 +982,7 @@ Package scrbase Info: activating spanish \byname on input line 61.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 61.
+(scrlayer)             \begin{document} on input line 63.
 \openout2 = `portada.aux'.
 
 (./portada.tex
@@ -1010,11 +1020,11 @@ Package pdftex.def Info: Figures/fondo.pdf  used on input line 51.
 --------------------
 1: section
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 89.
+(Font)              <10.95> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 89.
+(Font)              <6> on input line 91.
 [1
 
 ] [2
@@ -1061,37 +1071,50 @@ LaTeX Info: Redefining \% on input line 1.
 
 (./Chapters/Chapter1.tex
 Cap\'{\i }tulo 1.
-)
+
+Overfull \hbox (33.06635pt too wide) in paragraph at lines 34--57
+ [][] 
+ []
+
 1: section
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \include{Chapters/Chapter1}
-                                  [1
+l.63 
+      [1
 
 
 ]
-\openout2 = `Chapters/Chapter2.aux'.
-
- (./Chapters/Chapter2.texpdfTeX warning (ext4): destination with the same ident
-ifier (name{page.2}) has been already used, duplicate ignored
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \chapter
-            {Introducción específica} % Main chapter title [2
+l.79 
+      [2]
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [3])
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [4]
+\openout2 = `Chapters/Chapter2.aux'.
 
-
-
-
-]
+ (./Chapters/Chapter2.tex
 Cap\'{\i }tulo 2.
 )
 1: section
-[3]
+[5
+
+
+
+
+]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex [4
+ (./Chapters/Chapter3.tex [6
 
 
 
@@ -1100,10 +1123,10 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 )
 1: section
-[5]
+[7]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex [6
+ (./Chapters/Chapter4.tex [8
 
 
 
@@ -1112,10 +1135,10 @@ Cap\'{\i }tulo 3.
 Cap\'{\i }tulo 4.
 )
 1: section
-[7]
+[9]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [8
+ (./Chapters/Chapter5.tex [10
 
 
 
@@ -1124,9 +1147,9 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 )
 1: section
-[9]
+[11]
 
-LaTeX Warning: Empty bibliography on input line 123.
+LaTeX Warning: Empty bibliography on input line 125.
 
 (./memorianueva.aux (./portada.aux)
 LaTeX Info: Redefining \sptext on input line 30.
@@ -1135,18 +1158,24 @@ LaTeX Info: Redefining \% on input line 30.
  (./Chapters/Chapter1.aux)
 (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux)
 (./Chapters/Chapter5.aux))
-Package rerunfilecheck Info: File `memorianueva.out' has not changed.
-(rerunfilecheck)             Checksum: E527D967E3DB9E3CF325B84912533422;3154.
+
+Package rerunfilecheck Warning: File `memorianueva.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `memorianueva.out':
+(rerunfilecheck)             Before: E527D967E3DB9E3CF325B84912533422;3154
+(rerunfilecheck)             After:  B9C75DA3AC40A37EEBFF86BF7FCBF589;3310.
 Package logreq Info: Writing requests to 'memorianueva.run.xml'.
 \openout1 = `memorianueva.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30120 strings out of 480071
- 644365 string characters out of 5891617
- 1153315 words of memory out of 5000000
- 47662 multiletter control sequences out of 15000+600000
- 511911 words of font info for 73 fonts, out of 8000000 for 9000
+ 30186 strings out of 480071
+ 645539 string characters out of 5891617
+ 1158659 words of memory out of 5000000
+ 47714 multiletter control sequences out of 15000+600000
+ 520413 words of font info for 83 fonts, out of 8000000 for 9000
  108 hyphenation exceptions out of 8191
  96i,20n,93p,1937b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1154,11 +1183,12 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on memorianueva.pdf (19 pages, 105328 bytes).
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on memorianueva.pdf (21 pages, 134444 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
