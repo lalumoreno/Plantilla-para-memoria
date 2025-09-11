@@ -5,7 +5,8 @@
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 \label{IntroGeneral}
 
-Todos los capítulos deben comenzar con un breve párrafo introductorio que indique cuál es el contenido que se encontrará al leerlo.  La redacción sobre el contenido de la memoria debe hacerse en presente y todo lo referido al proyecto en pasado, siempre de modo impersonal.
+Este capítulo presenta el contexto en el que se enmarca el trabajo, así como la motivación que lo origina y los objetivos que se persiguen. En primer lugar, se expone una revisión del estado del arte de las tecnologías de comunicación aplicadas a redes de sensores en invernaderos. A continuación, se describe la motivación que da lugar al trabajo, señalando las limitaciones de los sistemas actuales de Wentux Tecnoagro y la necesidad de plantear soluciones alternativas. Finalmente, se define el alcance del proyecto y se establecen los objetivos generales y específicos que guían su desarrollo.
+
 
 %----------------------------------------------------------------------------------------
 
@@ -63,21 +64,54 @@ En la Tabla \ref{tab:comparacion_tecnologias} se presenta una comparación de la
    
     \item \textbf{LoRa:} Orientado a comunicaciones de largo alcance y bajo consumo, es ideal para aplicaciones agrícolas en exteriores. Permite conexiones a varios kilómetros (hasta 10 km en entornos abiertos), pero a costa de un ancho de banda muy limitado (0.3–50 kbps) y una alta latencia, lo que lo hace menos adecuado para aplicaciones que requieren interacción en tiempo real.   
    
-    \item \textbf{Bluetooth Mesh:} Extiende las capacidades de Bluetooth Low Energy (BLE) mediante la creación de \textbf{redes en malla descentralizadas}, donde cada nodo puede retransmitir mensajes y ampliar el alcance total del sistema. Su bajo consumo energético, la interoperabilidad con dispositivos existentes y la capacidad de formar redes escalables (cientos de nodos) lo convierten en una solución especialmente atractiva para entornos cerrados como invernaderos. Entre sus limitaciones se encuentra el alcance reducido por nodo en comparación con otras tecnologías, lo que exige un despliegue cuidadoso para garantizar la cobertura completa.    
+    \item \textbf{Bluetooth Mesh:} Extiende las capacidades de Bluetooth Low Energy (BLE) mediante la creación de \textbf{redes en malla descentralizadas}, donde cada nodo puede retransmitir mensajes y ampliar el alcance total del sistema. Su bajo consumo energético, la interoperabilidad con dispositivos existentes y la capacidad de formar redes escalables con cientos de nodos, lo convierten en una solución especialmente atractiva para entornos cerrados como lo son los invernaderos. Entre sus limitaciones se encuentra el alcance reducido por nodo en comparación con otras tecnologías, lo que exige un despliegue cuidadoso para garantizar la cobertura completa.    
 \end{itemize}
 
-En síntesis, cada tecnología ofrece ventajas y limitaciones que determinan su aplicabilidad en función del entorno y los requisitos del sistema. Mientras que LoRa resulta más adecuado para grandes extensiones agrícolas, Zigbee y Bluetooth Mesh se consideran las tecnologías más apropiadas para invernaderos, destacando esta última por su \textbf{flexibilidad, escalabilidad y compatibilidad con el ecosistema IoT actual}.
+En síntesis, cada tecnología ofrece ventajas y limitaciones que determinan su aplicabilidad en función del entorno y los requisitos del sistema. Mientras que LoRa resulta más adecuado para grandes extensiones agrícolas, Zigbee y Bluetooth Mesh se consideran las tecnologías más apropiadas para invernaderos, destacando esta última por su \textbf{flexibilidad, escalabilidad y compatibilidad con el ecosistema IoT actual}.  \cite{zigbee_spec, lora_alliance, ieee_wifi, bluetooth_mesh_spec}.
+
+%% AGREGAR BIBLIOGRAFIA
+ 
 %----------------------------------------------------------------------------------------
 
 \section{Motivación}
 
-Los sistemas de monitoreo y control de invernaderos desarrollados por la empresa Wentux Tecnoagro utilizan actualmente un esquema de conexión \textbf{cableada} entre sensores, actuadores y un nodo central. Si bien esta solución garantiza estabilidad y confiabilidad en la transmisión de datos, presenta limitaciones significativas en cuanto a \textit{escalabilidad, flexibilidad y facilidad de instalación}. El nodo central admite solo un número reducido de sensores y actuadores, lo que restringe la expansión del sistema y obliga a realizar instalaciones complejas y costosas a medida que se requiere cubrir mayores áreas de cultivo.
+Los sistemas de monitoreo y control de invernaderos desarrollados por la empresa Wentux Tecnoagro utilizan actualmente un esquema de conexión \textbf{cableada} entre sensores, actuadores y un dispositivo central. Si bien esta solución garantiza estabilidad y confiabilidad en la transmisión de datos, presenta limitaciones significativas en cuanto a \textit{escalabilidad, flexibilidad y facilidad de instalación}. El dispositivo central admite un máximo de seis sensores y actuadores conectados en simultaneo, lo que restringe la expansión del sistema y obliga a realizar instalaciones complejas y costosas a medida que se requiere cubrir mayores áreas de cultivo.
 
 Estas limitaciones dificultan la competitividad de la empresa en un mercado donde la \textbf{agricultura de precisión} demanda soluciones cada vez más flexibles, modulares y adaptables a diferentes escenarios productivos. En este contexto, surge la necesidad de implementar una alternativa basada en tecnologías inalámbricas que permita superar los obstáculos del esquema cableado.
 
-La propuesta de este trabajo se centra en el diseño y la implementación de un sistema \textbf{Bluetooth Mesh}, una solución que aporta escalabilidad al posibilitar la incorporación de nuevos nodos sin necesidad de cableado adicional, y flexibilidad al adaptarse a diferentes configuraciones de red dentro del invernadero. Asimismo, la integración de esta tecnología en un \textbf{entorno embebido IoT} resulta especialmente relevante, ya que aprovecha las capacidades de procesamiento distribuido y comunicación colaborativa entre dispositivos, alineándose con las tendencias actuales en automatización agrícola.
+La propuesta de este trabajo se centra en el diseño y la implementación de un sistema \textbf{Bluetooth Mesh}, una solución que aporta escalabilidad al posibilitar la incorporación de nuevos nodos sin necesidad de cableado adicional, y flexibilidad al adaptarse a diferentes configuraciones de red dentro del invernadero. 
 
-En síntesis, la motivación principal de este proyecto radica en ofrecer a Wentux Tecnoagro una solución que no solo resuelva las limitaciones de sus sistemas actuales, sino que también aporte \textbf{valor agregado} mediante una plataforma tecnológica moderna, escalable y orientada a la innovación en el sector agroindustrial.
+En la Figura~\ref{fig:ble_mesh} se ilustra de manera conceptual el funcionamiento de una red Bluetooth Mesh, en la cual cada nodo puede retransmitir mensajes a otros nodos, lo que permite ampliar la cobertura y garantizar la comunicación aun cuando no exista un enlace directo. Asimismo, se representa un \textbf{gateway}, que actúa como el nodo encargado de enlazar la red interna con el exterior a través de una interfaz de gestión o un servidor.
+
+La integración de esta tecnología en un \textbf{entorno embebido IoT} resulta especialmente relevante, ya que aprovecha las capacidades de procesamiento distribuido y comunicación colaborativa entre dispositivos, alineándose con las tendencias actuales en automatización agrícola.
+
+En síntesis, la motivación principal de este trabajo radica en ofrecer a Wentux Tecnoagro una solución que no solo resuelva las limitaciones de sus sistemas actuales, sino que también aporte \textbf{valor agregado} mediante una plataforma tecnológica moderna, escalable y orientada a la innovación en el sector agroindustrial.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=1, every node/.style={scale=0.9}]
+
+% Nodos
+\node[draw, circle, fill=blue!20, minimum size=1cm] (n1) at (0,0) {Nodo};
+\node[draw, circle, fill=blue!20, minimum size=1cm] (n2) at (3,1.5) {Nodo};
+\node[draw, circle, fill=blue!20, minimum size=1cm] (n3) at (6,0) {Nodo};
+\node[draw, circle, fill=green!20, minimum size=1cm] (gw) at (3,-2) {Gateway};
+
+% Conexiones
+\draw[-{Stealth}, thick] (n1) -- (n2);
+\draw[-{Stealth}, thick] (n2) -- (n3);
+\draw[-{Stealth}, thick, dashed] (n1) -- (n3);
+\draw[-{Stealth}, thick] (n2) -- (gw);
+\draw[-{Stealth}, thick] (n1) -- (gw);
+
+% Etiquetas
+\node at (3,2.8) {\textbf{Red Bluetooth Mesh}};
+\node[align=center] at (3,-3.3) {El Gateway conecta la red \\ con el exterior´};
+
+\end{tikzpicture}
+\caption{Ejemplo de comunicación en una red Bluetooth Mesh}
+\label{fig:ble_mesh}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 
