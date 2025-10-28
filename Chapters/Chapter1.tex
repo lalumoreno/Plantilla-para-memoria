@@ -5,7 +5,7 @@
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 \label{IntroGeneral}
 
-Este capítulo presenta el contexto en el que se enmarca el trabajo, así como la motivación que lo origina y los objetivos que se persiguen. En primer lugar, se expone una revisión del estado del arte de las tecnologías de comunicación aplicadas a redes de sensores en invernaderos. A continuación, se describe la motivación que da lugar al trabajo, señalando las limitaciones de los sistemas actuales de Wentux Tecnoagro y la necesidad de plantear soluciones alternativas. Finalmente, se define el alcance del proyecto y se establecen los objetivos generales y específicos que guían su desarrollo.
+Este capítulo presenta el contexto en el que se enmarca el trabajo, así como la motivación que lo origina y los objetivos que se persiguen. En primer lugar, se expone una revisión del estado del arte de las diferentes tecnologías de comunicación aplicadas a redes de sensores en invernaderos. A continuación, se describe la motivación que da lugar al trabajo, señalando las limitaciones de los sistemas actuales de Wentux Tecnoagro y la necesidad de plantear soluciones alternativas. Finalmente, se define el alcance del proyecto y se establecen los objetivos generales y específicos que guían su desarrollo.
 
 
 %----------------------------------------------------------------------------------------
@@ -24,9 +24,9 @@ Este capítulo presenta el contexto en el que se enmarca el trabajo, así como l
 %----------------------------------------------------------------------------------------
 \section{Estado del arte}
 
-En el ámbito de la agricultura de precisión y, en particular, en los sistemas de monitoreo y control de invernaderos, las \textbf{redes de sensores} cumplen un papel central para la adquisición de datos ambientales y el accionamiento de dispositivos de control. Tradicionalmente, estos sistemas han utilizado \textbf{soluciones cableadas}, que si bien ofrecen estabilidad y baja latencia, presentan limitaciones importantes en términos de flexibilidad, costos de instalación y escalabilidad. Estas restricciones han impulsado el desarrollo y adopción de \textbf{tecnologías inalámbricas} que permiten implementar redes más dinámicas, modulares y fáciles de expandir.
+En el ámbito de la agricultura de precisión y, en particular, en los sistemas de monitoreo y control de invernaderos, las redes de sensores cumplen un papel central para la adquisición de datos ambientales y el accionamiento de dispositivos de control. Tradicionalmente, estos sistemas han utilizado soluciones cableadas, que si bien ofrecen estabilidad y baja latencia, presentan limitaciones importantes en términos de flexibilidad, costos de instalación y escalabilidad. Estas restricciones han impulsado el desarrollo y adopción de tecnologías inalámbricas que permiten implementar redes más dinámicas, modulares y fáciles de expandir.
 
-En la Tabla \ref{tab:comparacion_tecnologias} se presenta una comparación de las principales alternativas utilizadas en la actualidad para redes de sensores: Wi-Fi, Zigbee, LoRa y Bluetooth Mesh.  
+Dentro de las principales alternativas de teconologías inalambrias utilizadas en la actualidad para redes de sensores se encuentran: Wi-Fi, Zigbee, LoRa y Bluetooth Mesh. En la Tabla \ref{tab:comparacion_tecnologias} se presenta una comparación entre ellas.   
 
 \begin{table}[h]
 \centering
@@ -67,7 +67,7 @@ En la Tabla \ref{tab:comparacion_tecnologias} se presenta una comparación de la
     \item \textbf{Bluetooth Mesh:} Extiende las capacidades de Bluetooth Low Energy (BLE) mediante la creación de \textbf{redes en malla descentralizadas}, donde cada nodo puede retransmitir mensajes y ampliar el alcance total del sistema. Su bajo consumo energético, la interoperabilidad con dispositivos existentes y la capacidad de formar redes escalables con cientos de nodos, lo convierten en una solución especialmente atractiva para entornos cerrados como lo son los invernaderos. Entre sus limitaciones se encuentra el alcance reducido por nodo en comparación con otras tecnologías, lo que exige un despliegue cuidadoso para garantizar la cobertura completa.    
 \end{itemize}
 
-En síntesis, cada tecnología ofrece ventajas y limitaciones que determinan su aplicabilidad en función del entorno y los requisitos del sistema. Mientras que LoRa resulta más adecuado para grandes extensiones agrícolas, Zigbee y Bluetooth Mesh se consideran las tecnologías más apropiadas para invernaderos, destacando esta última por su \textbf{flexibilidad, escalabilidad y compatibilidad con el ecosistema IoT actual}.  \cite{zigbee_spec, lora_alliance, ieee_wifi, bluetooth_mesh_spec}.
+En síntesis, cada tecnología ofrece ventajas y limitaciones que determinan su aplicabilidad en función del entorno y los requisitos del sistema. Mientras que LoRa resulta más adecuado para grandes extensiones agrícolas, Zigbee y Bluetooth Mesh se consideran las tecnologías más apropiadas para invernaderos, destacando esta última por su flexibilidad, escalabilidad y compatibilidad con el ecosistema IoT actual.  \cite{zigbee_spec, lora_alliance, ieee_wifi, bluetooth_mesh_spec}.
 
 %% AGREGAR BIBLIOGRAFIA
  
